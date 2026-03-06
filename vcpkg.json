@@ -1,0 +1,9 @@
+{
+  "name": "cg2",
+  "version-string": "0.1.0",
+  "dependencies": [
+    "directxtex",
+    "nlohmann-json"
+  ],
+  "builtin-baseline": "9435d79b256b0102419756dba020b28801729465"
+}
