@@ -3,7 +3,7 @@
 
 void Game::Initialize() {
 	FrameWork::Initialize();
-	GameBase::GetInstance()->Initialize(L"LE2A_04_カシワギ_ハルカ", 1280, 720);
+	GameBase::GetInstance()->Initialize(L"LE2A_04_カシワギハルカ_氷華", 1280, 720);
 
 	SetUnhandledExceptionFilter(GameBase::GetInstance()->ExportDump);
 
@@ -11,10 +11,9 @@ void Game::Initialize() {
 	SceneManager::GetInstance()->SetSceneFactory(sceneFactory_.get());
 	/*SceneManager::GetInstance()->ChangeScene("Title");*/
 	SceneManager::GetInstance()->ChangeScene("Sample");
-	//SceneManager::GetInstance()->ChangeScene("Game");
+	/*SceneManager::GetInstance()->ChangeScene("Game");*/
 	/*SceneManager::GetInstance()->ChangeScene("Result");*/
 	/*SceneManager::GetInstance()->ChangeScene("Tutorial");*/
-
 }
 
 void Game::Update() {

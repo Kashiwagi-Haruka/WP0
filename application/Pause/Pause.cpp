@@ -2,7 +2,7 @@
 #include "Function.h"
 #include "Input.h"
 #include "TextureManager.h"
-#include "SpriteCommon.h"
+
 namespace {
 constexpr float kTransitionSpeed = 0.06f;
 constexpr float kHiddenOffsetX = 1280.0f;
@@ -126,7 +126,7 @@ void Pause::Draw() {
 	if (!IsVisible()) {
 		return;
 	}
-	SpriteCommon::GetInstance()->DrawCommon();
+
 	BG_->Draw();
 	Select_->Draw();
 	Button_->Draw();

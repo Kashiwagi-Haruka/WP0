@@ -223,26 +223,13 @@ copy "$(WindowsSdkDir)\bin\$(TargetPlatformVersion)\x64\dxil.dll" "$(TargetDir)\
     <ClCompile Include="Engine\Texture\Mesh\Primitive\Primitive.cpp" />
     <ClCompile Include="Engine\Texture\Mesh\Animation\Skeleton.cpp" />
     <ClCompile Include="Engine\Texture\Mesh\Animation\SkinCluster.cpp" />
-    <ClCompile Include="application\Scene\TD3_4month\ShadowGameScene.cpp" />
-    <ClCompile Include="application\GameObject\Player\Player.cpp" />
-    <ClCompile Include="application\GameObject\YoshidaMath\YoshidaMath.cpp" />
     <ClCompile Include="Engine\Loadfile\JSON\JsonManager.cpp" />
     <ClCompile Include="Engine\Editor\Hierarchy.cpp" />
-    <ClCompile Include="application\GameObject\TestField\TestField.cpp" />
-    <ClCompile Include="application\GameObject\Portal\Portal.cpp" />
-    <ClCompile Include="application\GameObject\WarpPos\WarpPos.cpp" />
-    <ClCompile Include="application\GameObject\WhiteBoard\WhiteBoard.cpp" />
-    <ClCompile Include="application\GameObject\Portal\PortalManager.cpp" />
-    <ClCompile Include="application\GameObject\TimeCard\TimeCardWatch.cpp" />
-    <ClCompile Include="application\GameObject\GameCamera\PlayerCamera\PlayerCamera.cpp" />
     <ClCompile Include="Engine\Texture\PSO\SpriteCreatePSO.cpp" />
     <ClCompile Include="Engine\Editor\Inspector.cpp" />
     <ClCompile Include="Engine\Editor\ToolBar.cpp" />
     <ClCompile Include="Engine\Texture\RenderTexture2D.cpp" />
     <ClCompile Include="Engine\Texture\Mesh\Portal\PortalMesh.cpp" />
-    <ClCompile Include="application\GameObject\WhiteBoard\WalkWhiteBoard.cpp" />
-    <ClCompile Include="application\GameObject\UI\RaySprite.cpp" />
-    <ClCompile Include="application\GameObject\Portal\PortalParticle.cpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include=".editorconfig" />
@@ -260,9 +247,9 @@ copy "$(WindowsSdkDir)\bin\$(TargetPlatformVersion)\x64\dxil.dll" "$(TargetDir)\
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Engine\Editor\EditorGrid.h" />
+    <ClInclude Include="Engine\math\QuaternionTransform.h" />
     <ClInclude Include="Engine\Texture\Material.h" />
     <ClInclude Include="Engine\Texture\Mesh\Animation\AnimationManager.h" />
-    <ClInclude Include="Engine\Math\QuaternionTransform.h" />
     <ClInclude Include="Engine\Texture\Color.h" />
     <ClInclude Include="Engine\Texture\Mesh\Animation\Animation.h" />
     <ClInclude Include="Engine\Texture\Light\AreaLight.h" />
@@ -329,26 +316,13 @@ copy "$(WindowsSdkDir)\bin\$(TargetPlatformVersion)\x64\dxil.dll" "$(TargetDir)\
     <ClInclude Include="Engine\Texture\Mesh\Primitive\Primitive.h" />
     <ClInclude Include="Engine\Texture\Mesh\Animation\Skeleton.h" />
     <ClInclude Include="Engine\Texture\Mesh\Animation\SkinCluster.h" />
-    <ClInclude Include="application\Scene\TD3_4month\ShadowGameScene.h" />
-    <ClInclude Include="application\GameObject\Player\Player.h" />
-    <ClInclude Include="application\GameObject\YoshidaMath\YoshidaMath.h" />
     <ClInclude Include="Engine\Loadfile\JSON\JsonManager.h" />
     <ClInclude Include="Engine\Editor\Hierarchy.h" />
-    <ClInclude Include="application\GameObject\TestField\TestField.h" />
-    <ClInclude Include="application\GameObject\Portal\Portal.h" />
-    <ClInclude Include="application\GameObject\WarpPos\WarpPos.h" />
-    <ClInclude Include="application\GameObject\WhiteBoard\WhiteBoard.h" />
-    <ClInclude Include="application\GameObject\Portal\PortalManager.h" />
-    <ClInclude Include="application\GameObject\TimeCard\TimeCardWatch.h" />
-    <ClInclude Include="application\GameObject\GameCamera\PlayerCamera\PlayerCamera.h" />
     <ClInclude Include="Engine\Texture\PSO\SpriteCreatePSO.h" />
     <ClInclude Include="Engine\Editor\Inspector.h" />
     <ClInclude Include="Engine\Editor\ToolBar.h" />
     <ClInclude Include="Engine\Texture\RenderTexture2D.h" />
     <ClInclude Include="Engine\Texture\Mesh\Portal\PortalMesh.h" />
-    <ClInclude Include="application\GameObject\WhiteBoard\WalkWhiteBoard.h" />
-    <ClInclude Include="application\GameObject\UI\RaySprite.h" />
-    <ClInclude Include="application\GameObject\Portal\PortalParticle.h" />
   </ItemGroup>
   <ItemGroup>
     <FxCompile Include="Resources\shader\FullScreenCopy\CopyImage.PS.hlsl">

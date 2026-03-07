@@ -104,9 +104,6 @@
     <ClCompile Include="Engine\base\GameBase.cpp">
       <Filter>Engine\Base</Filter>
     </ClCompile>
-    <ClCompile Include="application\GameTimer\GameTimer.cpp">
-      <Filter>Application</Filter>
-    </ClCompile>
     <ClCompile Include="Engine\Editor\Hierarchy.cpp">
       <Filter>Engine\Editor</Filter>
     </ClCompile>
@@ -162,63 +159,6 @@
       <Filter>Engine\Texture\Particle</Filter>
     </ClCompile>
     <ClCompile Include="application\main.cpp">
-      <Filter>Application</Filter>
-    </ClCompile>
-    <ClCompile Include="application\Pause\Pause.cpp">
-      <Filter>Application</Filter>
-    </ClCompile>
-    <ClCompile Include="application\GameObject\Player\Player.cpp">
-      <Filter>Application</Filter>
-    </ClCompile>
-    <ClCompile Include="application\GameObject\GameCamera\PlayerCamera\PlayerCamera.cpp">
-      <Filter>Application</Filter>
-    </ClCompile>
-    <ClCompile Include="application\GameObject\Portal\Portal.cpp">
-      <Filter>Application</Filter>
-    </ClCompile>
-    <ClCompile Include="application\GameObject\Portal\PortalManager.cpp">
-      <Filter>Application</Filter>
-    </ClCompile>
-    <ClCompile Include="application\GameObject\Portal\PortalParticle.cpp">
-      <Filter>Application</Filter>
-    </ClCompile>
-    <ClCompile Include="application\GameObject\UI\RaySprite.cpp">
-      <Filter>Application</Filter>
-    </ClCompile>
-    <ClCompile Include="application\Scene\ResultScene.cpp">
-      <Filter>Application</Filter>
-    </ClCompile>
-    <ClCompile Include="application\Scene\SampleScene\SampleScene.cpp">
-      <Filter>Application</Filter>
-    </ClCompile>
-    <ClCompile Include="application\Scene\SceneFactory\SceneFactory.cpp">
-      <Filter>Application</Filter>
-    </ClCompile>
-    <ClCompile Include="application\SceneTransition\SceneTransition.cpp">
-      <Filter>Application</Filter>
-    </ClCompile>
-    <ClCompile Include="application\Scene\TD3_4month\ShadowGameScene.cpp">
-      <Filter>Application</Filter>
-    </ClCompile>
-    <ClCompile Include="application\GameObject\TestField\TestField.cpp">
-      <Filter>Application</Filter>
-    </ClCompile>
-    <ClCompile Include="application\Scene\TitleScene.cpp">
-      <Filter>Application</Filter>
-    </ClCompile>
-    <ClCompile Include="application\GameObject\TimeCard\TimeCardWatch.cpp">
-      <Filter>Application</Filter>
-    </ClCompile>
-    <ClCompile Include="application\GameObject\WhiteBoard\WalkWhiteBoard.cpp">
-      <Filter>Application</Filter>
-    </ClCompile>
-    <ClCompile Include="application\GameObject\WarpPos\WarpPos.cpp">
-      <Filter>Application</Filter>
-    </ClCompile>
-    <ClCompile Include="application\GameObject\WhiteBoard\WhiteBoard.cpp">
-      <Filter>Application</Filter>
-    </ClCompile>
-    <ClCompile Include="application\GameObject\YoshidaMath\YoshidaMath.cpp">
       <Filter>Application</Filter>
     </ClCompile>
     <ClCompile Include="Engine\Texture\PSO\SpriteCreatePSO.cpp">
@@ -282,10 +222,31 @@
       <Filter>Application\Game</Filter>
     </ClCompile>
     <ClCompile Include="application\Scene\GameOverScene.cpp">
-      <Filter>Application\GameOverScene</Filter>
+      <Filter>Application\Scene\GameOverScene</Filter>
     </ClCompile>
     <ClCompile Include="application\Scene\GameScene.cpp">
-      <Filter>Application\GameScene</Filter>
+      <Filter>Application\Scene\GameScene</Filter>
+    </ClCompile>
+    <ClCompile Include="application\GameTimer\GameTimer.cpp">
+      <Filter>Application\GameTimer</Filter>
+    </ClCompile>
+    <ClCompile Include="application\Scene\ResultScene.cpp">
+      <Filter>Application\Scene\ResultScene</Filter>
+    </ClCompile>
+    <ClCompile Include="application\Scene\SampleScene\SampleScene.cpp">
+      <Filter>Application\SampleScene</Filter>
+    </ClCompile>
+    <ClCompile Include="application\Scene\SceneFactory\SceneFactory.cpp">
+      <Filter>Application\SceneFactory</Filter>
+    </ClCompile>
+    <ClCompile Include="application\Scene\TitleScene.cpp">
+      <Filter>Application\Scene\TitleScene</Filter>
+    </ClCompile>
+    <ClCompile Include="application\Pause\Pause.cpp">
+      <Filter>Application\Pause</Filter>
+    </ClCompile>
+    <ClCompile Include="application\SceneTransition\SceneTransition.cpp">
+      <Filter>Application\SceneTransition</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -340,9 +301,6 @@
     </ClInclude>
     <ClInclude Include="Engine\base\GameBase.h">
       <Filter>Engine\Base</Filter>
-    </ClInclude>
-    <ClInclude Include="application\GameTimer\GameTimer.h">
-      <Filter>Application</Filter>
     </ClInclude>
     <ClInclude Include="Engine\Editor\Hierarchy.h">
       <Filter>Engine\Editor</Filter>
@@ -403,66 +361,6 @@
     </ClInclude>
     <ClInclude Include="Engine\Texture\Light\PointLight.h">
       <Filter>Engine\Light</Filter>
-    </ClInclude>
-    <ClInclude Include="application\Pause\Pause.h">
-      <Filter>Application</Filter>
-    </ClInclude>
-    <ClInclude Include="application\GameObject\Player\Player.h">
-      <Filter>Application</Filter>
-    </ClInclude>
-    <ClInclude Include="application\GameObject\GameCamera\PlayerCamera\PlayerCamera.h">
-      <Filter>Application</Filter>
-    </ClInclude>
-    <ClInclude Include="application\GameObject\Portal\Portal.h">
-      <Filter>Application</Filter>
-    </ClInclude>
-    <ClInclude Include="application\GameObject\Portal\PortalManager.h">
-      <Filter>Application</Filter>
-    </ClInclude>
-    <ClInclude Include="application\GameObject\Portal\PortalParticle.h">
-      <Filter>Application</Filter>
-    </ClInclude>
-    <ClInclude Include="Engine\Math\QuaternionTransform.h">
-      <Filter>Application</Filter>
-    </ClInclude>
-    <ClInclude Include="application\GameObject\UI\RaySprite.h">
-      <Filter>Application</Filter>
-    </ClInclude>
-    <ClInclude Include="application\Scene\ResultScene.h">
-      <Filter>Application</Filter>
-    </ClInclude>
-    <ClInclude Include="application\Scene\SampleScene\SampleScene.h">
-      <Filter>Application</Filter>
-    </ClInclude>
-    <ClInclude Include="application\Scene\SceneFactory\SceneFactory.h">
-      <Filter>Application</Filter>
-    </ClInclude>
-    <ClInclude Include="application\SceneTransition\SceneTransition.h">
-      <Filter>Application</Filter>
-    </ClInclude>
-    <ClInclude Include="application\Scene\TD3_4month\ShadowGameScene.h">
-      <Filter>Application</Filter>
-    </ClInclude>
-    <ClInclude Include="application\GameObject\TestField\TestField.h">
-      <Filter>Application</Filter>
-    </ClInclude>
-    <ClInclude Include="application\Scene\TitleScene.h">
-      <Filter>Application</Filter>
-    </ClInclude>
-    <ClInclude Include="application\GameObject\TimeCard\TimeCardWatch.h">
-      <Filter>Application</Filter>
-    </ClInclude>
-    <ClInclude Include="application\GameObject\WhiteBoard\WalkWhiteBoard.h">
-      <Filter>Application</Filter>
-    </ClInclude>
-    <ClInclude Include="application\GameObject\WarpPos\WarpPos.h">
-      <Filter>Application</Filter>
-    </ClInclude>
-    <ClInclude Include="application\GameObject\WhiteBoard\WhiteBoard.h">
-      <Filter>Application</Filter>
-    </ClInclude>
-    <ClInclude Include="application\GameObject\YoshidaMath\YoshidaMath.h">
-      <Filter>Application</Filter>
     </ClInclude>
     <ClInclude Include="Engine\Texture\PSO\SpriteCreatePSO.h">
       <Filter>Engine\Texture\PSO</Filter>
@@ -555,10 +453,34 @@
       <Filter>Application\Game</Filter>
     </ClInclude>
     <ClInclude Include="application\Scene\GameOverScene.h">
-      <Filter>Application\GameOverScene</Filter>
+      <Filter>Application\Scene\GameOverScene</Filter>
     </ClInclude>
     <ClInclude Include="application\Scene\GameScene.h">
-      <Filter>Application\GameScene</Filter>
+      <Filter>Application\Scene\GameScene</Filter>
+    </ClInclude>
+    <ClInclude Include="application\GameTimer\GameTimer.h">
+      <Filter>Application\GameTimer</Filter>
+    </ClInclude>
+    <ClInclude Include="application\Scene\ResultScene.h">
+      <Filter>Application\Scene\ResultScene</Filter>
+    </ClInclude>
+    <ClInclude Include="application\Scene\SampleScene\SampleScene.h">
+      <Filter>Application\SampleScene</Filter>
+    </ClInclude>
+    <ClInclude Include="application\Scene\SceneFactory\SceneFactory.h">
+      <Filter>Application\SceneFactory</Filter>
+    </ClInclude>
+    <ClInclude Include="application\Scene\TitleScene.h">
+      <Filter>Application\Scene\TitleScene</Filter>
+    </ClInclude>
+    <ClInclude Include="application\Pause\Pause.h">
+      <Filter>Application\Pause</Filter>
+    </ClInclude>
+    <ClInclude Include="application\SceneTransition\SceneTransition.h">
+      <Filter>Application\SceneTransition</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\math\QuaternionTransform.h">
+      <Filter>Engine\Math</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -655,11 +577,35 @@
     <Filter Include="Application\Game">
       <UniqueIdentifier>{0b9e5e02-40ef-4487-94b8-040e092c0250}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Application\GameOverScene">
+    <Filter Include="Application\GameTimer">
+      <UniqueIdentifier>{d73d1588-b34f-45cb-a81b-3fc2b4862919}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Application\Scene">
+      <UniqueIdentifier>{f523440b-300a-43c6-a1f2-ccb7220d6549}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Application\Scene\GameScene">
+      <UniqueIdentifier>{23b1100c-d156-41f2-b59d-c02f9ff70aba}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Application\Scene\GameOverScene">
       <UniqueIdentifier>{96e0ee46-1ba3-45ff-b6d2-2ab42ddef23c}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Application\GameScene">
-      <UniqueIdentifier>{23b1100c-d156-41f2-b59d-c02f9ff70aba}</UniqueIdentifier>
+    <Filter Include="Application\Scene\ResultScene">
+      <UniqueIdentifier>{f63b140f-d735-4e04-9570-1229ae186fe7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Application\SampleScene">
+      <UniqueIdentifier>{91f43fb6-f2ad-4e3a-827d-6dc32275f2bf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Application\SceneFactory">
+      <UniqueIdentifier>{6ac44179-0c4f-4a7e-a0b8-325d258ca0c5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Application\Scene\TitleScene">
+      <UniqueIdentifier>{2400a39f-54b2-408d-b82c-a4d3c804aa36}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Application\Pause">
+      <UniqueIdentifier>{b928e205-7f4b-476b-adef-dd1457e9dbd2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Application\SceneTransition">
+      <UniqueIdentifier>{81bd65f6-00f1-4ea4-b17c-b7de9eaaa9ef}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

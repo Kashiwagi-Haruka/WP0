@@ -1,7 +1,6 @@
 #include "SceneTransition.h"
 #include "GameBase.h"
 #include "TextureManager.h"
-#include "Sprite/SpriteCommon.h"
 SceneTransition::SceneTransition() {
 
 	fadeSPData.handle = TextureManager::GetInstance()->GetTextureIndexByfilePath("Resources/2d/transition.png");
@@ -48,6 +47,4 @@ void SceneTransition::Update() {
 	fadeSPData.sprite->SetPosition(fadeSPData.translate);
 	fadeSPData.sprite->Update();
 }
-void SceneTransition::Draw() { 
-	fadeSPData.sprite->Draw(); 
-}
+void SceneTransition::Draw() { fadeSPData.sprite->Draw(); }
