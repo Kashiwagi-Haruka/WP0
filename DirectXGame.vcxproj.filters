@@ -248,6 +248,42 @@
     <ClCompile Include="application\SceneTransition\SceneTransition.cpp">
       <Filter>Application\SceneTransition</Filter>
     </ClCompile>
+    <ClCompile Include="application\CameraController\CameraController.cpp" />
+    <ClCompile Include="application\CollisionManager\CollisionManager.cpp" />
+    <ClCompile Include="application\Object\Background\SkyDome.cpp" />
+    <ClCompile Include="application\Object\Boss\Boss.cpp" />
+    <ClCompile Include="application\Object\Character\CharacterDisplay\CharacterDisplay.cpp" />
+    <ClCompile Include="application\Object\Character\CharacterDisplay\CharacterDisplaySkyDome.cpp" />
+    <ClCompile Include="application\Object\Character\Model\CharacterModel.cpp" />
+    <ClCompile Include="application\Object\Character\Sizuku\Sizuku.cpp" />
+    <ClCompile Include="application\Object\Enemy\Enemy.cpp" />
+    <ClCompile Include="application\Object\Enemy\EnemyAttack.cpp" />
+    <ClCompile Include="application\Object\Enemy\EnemyHitEffect.cpp" />
+    <ClCompile Include="application\Object\Enemy\EnemyManager.cpp" />
+    <ClCompile Include="application\Object\Enemy\EnemyStun.cpp" />
+    <ClCompile Include="application\Object\ExpCube\ExpCube.cpp" />
+    <ClCompile Include="application\Object\ExpCube\ExpCubeManager.cpp" />
+    <ClCompile Include="application\Object\House\House.cpp" />
+    <ClCompile Include="application\Object\House\HouseHP.cpp" />
+    <ClCompile Include="application\Object\Playable\Model\PlayableModel.cpp" />
+    <ClCompile Include="application\Object\Playable\Playable.cpp" />
+    <ClCompile Include="application\Object\Player\Attack\Skill\PlayerSkill.cpp" />
+    <ClCompile Include="application\Object\Player\Attack\Special\PlayerSpecialAttack.cpp" />
+    <ClCompile Include="application\Object\Player\Attack\PlayerAttack.cpp" />
+    <ClCompile Include="application\Object\Player\Attack\PlayerFallAttack.cpp" />
+    <ClCompile Include="application\Object\Player\Player.cpp" />
+    <ClCompile Include="application\Object\Player\PlayerModels.cpp" />
+    <ClCompile Include="application\Object\Player\PlayerParameters.cpp" />
+    <ClCompile Include="application\Object\Player\PlayerSkill.cpp" />
+    <ClCompile Include="application\Object\Player\PlayerSpecialAttack.cpp" />
+    <ClCompile Include="application\Object\Player\PlayerSword.cpp" />
+    <ClCompile Include="application\Object\Player\playerSwordTrail.cpp" />
+    <ClCompile Include="application\Object\MapchipField.cpp" />
+    <ClCompile Include="application\Particles\Particles.cpp" />
+    <ClCompile Include="application\Scene\TutorialScene.cpp" />
+    <ClCompile Include="application\Team\Team.cpp" />
+    <ClCompile Include="application\TutorialUI\TutorialUI.cpp" />
+    <ClCompile Include="application\UIManager\UIManager.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Engine\Texture\RenderTexture2D.h" />
@@ -482,6 +518,44 @@
     <ClInclude Include="Engine\math\QuaternionTransform.h">
       <Filter>Engine\Math</Filter>
     </ClInclude>
+    <ClInclude Include="application\CameraController\CameraController.h" />
+    <ClInclude Include="application\CollisionManager\CollisionManager.h" />
+    <ClInclude Include="application\GameObject\Key\Key.h" />
+    <ClInclude Include="application\Object\Background\SkyDome.h" />
+    <ClInclude Include="application\Object\Boss\Boss.h" />
+    <ClInclude Include="application\Object\Character\CharacterDisplay\CharacterDisplay.h" />
+    <ClInclude Include="application\Object\Character\CharacterDisplay\CharacterDisplaySkyDome.h" />
+    <ClInclude Include="application\Object\Character\Model\CharacterModel.h" />
+    <ClInclude Include="application\Object\Character\Sizuku\Sizuku.h" />
+    <ClInclude Include="application\Object\Enemy\Enemy.h" />
+    <ClInclude Include="application\Object\Enemy\EnemyAttack.h" />
+    <ClInclude Include="application\Object\Enemy\EnemyHitEffect.h" />
+    <ClInclude Include="application\Object\Enemy\EnemyManager.h" />
+    <ClInclude Include="application\Object\Enemy\EnemyStun.h" />
+    <ClInclude Include="application\Object\ExpCube\ExpCube.h" />
+    <ClInclude Include="application\Object\ExpCube\ExpCubeManager.h" />
+    <ClInclude Include="application\Object\House\House.h" />
+    <ClInclude Include="application\Object\House\HouseHP.h" />
+    <ClInclude Include="application\Object\Playable\Model\PlayableModel.h" />
+    <ClInclude Include="application\Object\Playable\Playable.h" />
+    <ClInclude Include="application\Object\Playable\PlayableParameter.h" />
+    <ClInclude Include="application\Object\Player\Attack\Skill\PlayerSkill.h" />
+    <ClInclude Include="application\Object\Player\Attack\Special\PlayerSpecialAttack.h" />
+    <ClInclude Include="application\Object\Player\Attack\PlayerAttack.h" />
+    <ClInclude Include="application\Object\Player\Attack\PlayerFallAttack.h" />
+    <ClInclude Include="application\Object\Player\Player.h" />
+    <ClInclude Include="application\Object\Player\PlayerModels.h" />
+    <ClInclude Include="application\Object\Player\PlayerParameters.h" />
+    <ClInclude Include="application\Object\Player\PlayerSkill.h" />
+    <ClInclude Include="application\Object\Player\PlayerSpecialAttack.h" />
+    <ClInclude Include="application\Object\Player\PlayerSword.h" />
+    <ClInclude Include="application\Object\Player\playerSwordTrail.h" />
+    <ClInclude Include="application\Object\MapchipField.h" />
+    <ClInclude Include="application\Particles\Particles.h" />
+    <ClInclude Include="application\Scene\TutorialScene.h" />
+    <ClInclude Include="application\Team\Team.h" />
+    <ClInclude Include="application\TutorialUI\TutorialUI.h" />
+    <ClInclude Include="application\UIManager\UIManager.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include=".editorconfig" />
