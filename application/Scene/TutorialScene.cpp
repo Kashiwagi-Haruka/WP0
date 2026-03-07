@@ -114,7 +114,7 @@ void TutorialScene::Update() {
 				const float playerRadius = std::max(playerScale.x, playerScale.z);
 				const float cubeRadius = std::max(cubeScale.x, cubeScale.z);
 				const float pickupRadius = playerRadius + cubeRadius;
-				if (LengthSquared(toCube) <= pickupRadius * pickupRadius) {
+				if (Function::LengthSquared(toCube) <= pickupRadius * pickupRadius) {
 					cube->Collect();
 					player_->EXPMath();
 					if (currentStepIndex_ == 5) {

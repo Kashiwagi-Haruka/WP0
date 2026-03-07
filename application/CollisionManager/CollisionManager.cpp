@@ -37,7 +37,7 @@ void CollisionManager::HandleGameSceneCollisions(Player& player, EnemyManager& e
 		if (hitHouseBody) {
 			Vector3 toEnemy = enemyPos - house.GetPosition();
 			toEnemy.y = 0.0f;
-			if (LengthSquared(toEnemy) < 0.0001f) {
+			if (Function::LengthSquared(toEnemy) < 0.0001f) {
 				toEnemy = {1.0f, 0.0f, 0.0f};
 			}
 			Vector3 pushDir = Function::Normalize(toEnemy);
@@ -191,7 +191,7 @@ if (player.GetIsAlive() && player.GetSkill() && player.GetSkill()->IsSpecialDama
 			const float playerRadius = std::max(playerScale.x, playerScale.z);
 			const float cubeRadius = std::max(cubeScale.x, cubeScale.z);
 			const float pickupRadius = playerRadius + cubeRadius;
-			if (LengthSquared(toCube) <= pickupRadius * pickupRadius) {
+			if (Function::LengthSquared(toCube) <= pickupRadius * pickupRadius) {
 				cube->Collect();
 				player.EXPMath();
 			}

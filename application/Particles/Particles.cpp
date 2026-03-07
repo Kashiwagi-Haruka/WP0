@@ -12,14 +12,17 @@ Particles::Particles() {
 	ParticleManager::GetInstance()->CreateParticleGroup("Arrow", "Resources/2d/ArrowParticle.png");
 	ParticleManager::GetInstance()->CreateParticleGroup("skill", "Resources/2d/ArrowParticle.png");
 
-	particleArrow = std::make_unique<ParticleEmitter>(
-	    "Arrow",
-	    Transform{
-	        {1,  1, 1 },
-            {0,  0, 0 },
-            {25, 0, 25}
-    },
-	    1.0f, 5, Vector3{0, 0, 0}, Vector3{-1, -1, -1}, Vector3{1, 1, 1});
+	particleArrow = std::make_unique<ParticleEmitter>("Arrow");
+	particleArrow->SetTransform(Transform{
+	    {1,  1, 1 },
+	    {0,  0, 0 },
+	    {25, 0, 25},
+	});
+	particleArrow->SetFrequency(1.0f);
+	particleArrow->SetCount(5);
+	particleArrow->SetAcceleration(Vector3{0, 0, 0});
+	particleArrow->SetAreaMin(Vector3{-1, -1, -1});
+	particleArrow->SetAreaMax(Vector3{1, 1, 1});
 	isgoal = false;
 }
 

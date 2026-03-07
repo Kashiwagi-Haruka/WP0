@@ -56,8 +56,13 @@ void PlayerSkill::Initialize() {
         .rotate{0,    0,    0   },
         .translate{0,    0,    0   }
     };
-	skillEmitter_ = std::make_unique<ParticleEmitter>(
-	    "skill", particle_, 1.0f, 10, Vector3{0, 0.01f, 0}, Vector3{-transform_.scale.x, 0, -transform_.scale.z}, Vector3{transform_.scale.x, 1.0f, transform_.scale.z});
+	skillEmitter_ = std::make_unique<ParticleEmitter>("skill");
+	skillEmitter_->SetTransform(particle_);
+	skillEmitter_->SetFrequency(1.0f);
+	skillEmitter_->SetCount(10);
+	skillEmitter_->SetAcceleration(Vector3{0, 0.01f, 0});
+	skillEmitter_->SetAreaMin(Vector3{-transform_.scale.x, 0, -transform_.scale.z});
+	skillEmitter_->SetAreaMax(Vector3{transform_.scale.x, 1.0f, transform_.scale.z});
 	skillEmitter_->SetLife(20.0f);
 	iceFlowers_ = std::make_unique<std::vector<Object3d>>();
 	iceFlowers_->clear();
@@ -150,7 +155,6 @@ void PlayerSkill::EnsureIceFlowerCount(int count) {
 	iceFlowerTransforms_.clear();
 	iceFlowerTransforms_.resize(static_cast<size_t>(count));
 	for (size_t i = 0; i < iceFlowers_->size(); i++) {
-		(*iceFlowers_)[i] = Object3d();
 		(*iceFlowers_)[i].Initialize();
 		(*iceFlowers_)[i].SetCamera(camera_);
 		(*iceFlowers_)[i].SetModel("iceFlower");

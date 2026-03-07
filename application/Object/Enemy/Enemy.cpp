@@ -80,7 +80,7 @@ void Enemy::Update(const Vector3& housePos, const Vector3& houseScale, const Vec
 	Vector3 targetPosition = housePos;
 	if (isPlayerAlive) {
 		Vector3 toPlayer = playerPos - transform_.translate;
-		if (LengthSquared(toPlayer) <= playerChaseRange_ * playerChaseRange_) {
+		if (Function::LengthSquared(toPlayer) <= playerChaseRange_ * playerChaseRange_) {
 			targetPosition = playerPos;
 		}
 	}
@@ -89,7 +89,7 @@ void Enemy::Update(const Vector3& housePos, const Vector3& houseScale, const Vec
 	if (!isStun_) {
 		Vector3 toTarget = targetPosition - transform_.translate;
 		toTarget.y = 0.0f;
-		if (LengthSquared(toTarget) > 0.0001f) {
+		if (Function::LengthSquared(toTarget) > 0.0001f) {
 			Vector3 direction = Function::Normalize(toTarget);
 			velocity_ = direction * maxSpeed_;
 		} else {
@@ -125,7 +125,7 @@ void Enemy::Update(const Vector3& housePos, const Vector3& houseScale, const Vec
 		float houseRadius = std::max({houseScale.x, houseScale.y, houseScale.z});
 		float enemyRadius = std::max({transform_.scale.x, transform_.scale.y, transform_.scale.z});
 		float houseAttackRange = attackRange_ + houseRadius + enemyRadius;
-		inAttackRange = LengthSquared(toTarget) <= attackRange_ * attackRange_ || LengthSquared(toHouse) <= houseAttackRange * houseAttackRange;
+		inAttackRange = Function::LengthSquared(toTarget) <= attackRange_ * attackRange_ || Function::LengthSquared(toHouse) <= houseAttackRange * houseAttackRange;
 	}
 	if (!isStun_ && !IsAttacking() && inAttackRange && IsAttackReady()) {
 		enemyAttack_->Start(transform_);

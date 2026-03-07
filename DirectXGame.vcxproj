@@ -183,8 +183,6 @@ copy "$(WindowsSdkDir)\bin\$(TargetPlatformVersion)\x64\dxil.dll" "$(TargetDir)\
     <ClCompile Include="application\Object\Player\Player.cpp" />
     <ClCompile Include="application\Object\Player\PlayerModels.cpp" />
     <ClCompile Include="application\Object\Player\PlayerParameters.cpp" />
-    <ClCompile Include="application\Object\Player\PlayerSkill.cpp" />
-    <ClCompile Include="application\Object\Player\PlayerSpecialAttack.cpp" />
     <ClCompile Include="application\Object\Player\PlayerSword.cpp" />
     <ClCompile Include="application\Object\Player\playerSwordTrail.cpp" />
     <ClCompile Include="application\Particles\Particles.cpp" />
@@ -311,8 +309,6 @@ copy "$(WindowsSdkDir)\bin\$(TargetPlatformVersion)\x64\dxil.dll" "$(TargetDir)\
     <ClInclude Include="application\Object\Player\Player.h" />
     <ClInclude Include="application\Object\Player\PlayerModels.h" />
     <ClInclude Include="application\Object\Player\PlayerParameters.h" />
-    <ClInclude Include="application\Object\Player\PlayerSkill.h" />
-    <ClInclude Include="application\Object\Player\PlayerSpecialAttack.h" />
     <ClInclude Include="application\Object\Player\PlayerSword.h" />
     <ClInclude Include="application\Object\Player\playerSwordTrail.h" />
     <ClInclude Include="application\Particles\Particles.h" />

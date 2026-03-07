@@ -274,8 +274,6 @@
     <ClCompile Include="application\Object\Player\Player.cpp" />
     <ClCompile Include="application\Object\Player\PlayerModels.cpp" />
     <ClCompile Include="application\Object\Player\PlayerParameters.cpp" />
-    <ClCompile Include="application\Object\Player\PlayerSkill.cpp" />
-    <ClCompile Include="application\Object\Player\PlayerSpecialAttack.cpp" />
     <ClCompile Include="application\Object\Player\PlayerSword.cpp" />
     <ClCompile Include="application\Object\Player\playerSwordTrail.cpp" />
     <ClCompile Include="application\Object\MapchipField.cpp" />
@@ -546,8 +544,6 @@
     <ClInclude Include="application\Object\Player\Player.h" />
     <ClInclude Include="application\Object\Player\PlayerModels.h" />
     <ClInclude Include="application\Object\Player\PlayerParameters.h" />
-    <ClInclude Include="application\Object\Player\PlayerSkill.h" />
-    <ClInclude Include="application\Object\Player\PlayerSpecialAttack.h" />
     <ClInclude Include="application\Object\Player\PlayerSword.h" />
     <ClInclude Include="application\Object\Player\playerSwordTrail.h" />
     <ClInclude Include="application\Object\MapchipField.h" />

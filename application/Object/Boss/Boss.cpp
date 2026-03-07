@@ -145,13 +145,13 @@ void Boss::Update(const Vector3& housePos, const Vector3& playerPos, bool isPlay
 	Vector3 targetPosition = housePos;
 	if (isPlayerAlive) {
 		Vector3 toPlayer = playerPos - basePosition_;
-		if (LengthSquared(toPlayer) <= playerChaseRange_ * playerChaseRange_) {
+		if (Function::LengthSquared(toPlayer) <= playerChaseRange_ * playerChaseRange_) {
 			targetPosition = playerPos;
 		}
 	}
 	Vector3 toTarget = targetPosition - basePosition_;
 	toTarget.y = 0.0f;
-	if (LengthSquared(toTarget) > 0.0001f) {
+	if (Function::LengthSquared(toTarget) > 0.0001f) {
 		Vector3 direction = Function::Normalize(toTarget);
 		velocity_ = direction * maxSpeed_;
 	} else {
@@ -165,13 +165,13 @@ void Boss::Update(const Vector3& housePos, const Vector3& playerPos, bool isPlay
 bool inAttackRange = false;
 	Vector3 toHouse = housePos - basePosition_;
 	toHouse.y = 0.0f;
-	if (LengthSquared(toHouse) <= attackRange_ * attackRange_) {
+	if (Function::LengthSquared(toHouse) <= attackRange_ * attackRange_) {
 		inAttackRange = true;
 	}
 	if (!inAttackRange && isPlayerAlive) {
 		Vector3 toPlayer = playerPos - basePosition_;
 		toPlayer.y = 0.0f;
-		inAttackRange = LengthSquared(toPlayer) <= attackRange_ * attackRange_;
+		inAttackRange = Function::LengthSquared(toPlayer) <= attackRange_ * attackRange_;
 	}
 	if (actionState_ == ActionState::Idle && attackTimer_ >= attackCooldown_ && inAttackRange) {
 		actionState_ = ActionState::Charging;
